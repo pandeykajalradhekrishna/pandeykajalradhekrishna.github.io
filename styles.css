@@ -1957,3 +1957,30 @@ footer .logo img{width:166px}
   .contact div{grid-template-columns:1fr}
   .assistant-panel{left:6px;right:6px}
 }
+
+/* Full-viewport neural atmosphere: removes the visible image rectangle */
+.ai-brain-ambient{
+  top:0;
+  left:50%;
+  width:100vw;
+  height:100svh;
+  background-position:center;
+  background-size:cover;
+  opacity:.11;
+  mix-blend-mode:screen;
+  -webkit-mask-image:radial-gradient(ellipse 105% 94% at 50% 50%,#000 42%,rgba(0,0,0,.78) 72%,transparent 100%);
+  mask-image:radial-gradient(ellipse 105% 94% at 50% 50%,#000 42%,rgba(0,0,0,.78) 72%,transparent 100%);
+}
+
+@media(max-width:800px){
+  .ai-brain-ambient{
+    top:0;
+    width:100vw;
+    height:100svh;
+    background-size:cover;
+    background-position:54% center;
+    opacity:.095;
+    -webkit-mask-image:radial-gradient(ellipse 118% 96% at 50% 50%,#000 35%,rgba(0,0,0,.72) 74%,transparent 100%);
+    mask-image:radial-gradient(ellipse 118% 96% at 50% 50%,#000 35%,rgba(0,0,0,.72) 74%,transparent 100%);
+  }
+}
